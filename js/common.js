@@ -45,10 +45,9 @@ $(function(){
   $('#minute').html(min)
   $('#second').html(sec)
   setInterval(() => {
-    $('#minute').text(min + 1)
+    $('#minute').text(min++)
   }, 60000)
   setInterval(() => {
-    console.info(sec , sec + 1)
-    $('#second').text(sec + 1)
+    $('#second').text(sec++)
   }, 1000)
 })
