@@ -34,3 +34,7 @@ var waitForFinalEvent = (function() {
     timers[uniqueId] = setTimeout(callback, ms);
   };
 })();
+
+$(function(){
+  $('#start').html(moment().diff('2017.8.13',moment()))
+})
