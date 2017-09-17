@@ -43,9 +43,9 @@ $(function(){
   $('#minute').html(0- timeS.diff(now,'minute'))
   $('#second').html(0- timeS.diff(now,'second'))
   setInterval(() => {
-    $('#minute').html(0- timeS.diff(now,'minute'))
+    $('#minute').html(0- (timeS.diff(now,'minute') + 1))
   }, 60000)
   setInterval(() => {
-    $('#second').html(0- timeS.diff(now,'second'))
+    $('#second').html(0- (timeS.diff(now,'second') + 1))
   }, 1000)
 })
