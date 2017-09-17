@@ -1,5 +1,4 @@
 # auto: true
-
 markdown: kramdown
 highlighter: rouge
 paginate: 8
@@ -8,7 +7,7 @@ encoding: UTF-8
 gems: [jekyll-paginate]
 
 title: Github Blog Template
-url: http://litaotao.github.io
+baseurl: https://github.com/Liaohuanle/liao.github.io
 feed: /atom.xml
 author_info: <a href="http://litaotao.github.io/">taotaoli</a>
 
