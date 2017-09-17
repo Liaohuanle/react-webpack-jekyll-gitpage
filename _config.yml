@@ -4,5 +4,5 @@ permalink: /:title
 encoding: UTF-8
 
 title: liaohuanle
-baseurl: https://github.com/Liaohuanle/Liaohuanle.github.io/index.html
+baseurl: https://github.com/Liaohuanle/liaohuanle.github.io/index.html
 feed: /atom.xml
