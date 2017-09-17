@@ -37,7 +37,8 @@ var waitForFinalEvent = (function() {
 
 $(function(){
   const timeS = moment('2017.8.13')
-  $('#day').html(timeS.diff(moment(),'day'))
-  $('#hour').html(momenttimeS.diff(moment(),'hour'))
-  setInterval($('#second').html(timeS.diff(moment(),'second')),1000)
+  const now = moment()
+  $('#day').html(timeS.diff(,'day'))
+  $('#hour').html(timeS.diff(now,'hour'))
+  setInterval($('#second').html(timeS.diff(now,'second')),1000)
 })
