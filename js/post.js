@@ -120,34 +120,4 @@ $(document).ready(function(){
       });
     })();
 
-    (function setupAvatar() {
-      var ah = $('div#avatarHolder');
-      var a = $('div#avatar');
-
-      if ($(window).width() > 750) {
-        var pos1left = $('div#menuIndex').offset().left - 145;
-        var pos2left = $('div#menuIndex').offset().left + 65;
-        $(document).scroll(function() {
-          var st = $(document).scrollTop();
-          if (st > 20 && !a.data('in-right')) {
-            a.data('in-right', true);
-            ah.transition({ width: 150, height: 150 }, function() {
-              a.transition({ left: pos2left });
-            });
-          } else if (st < 20 && a.data('in-right')) {
-            a.data('in-right', false);
-            a.transition({ left: pos1left }, function() {
-              ah.transition({ width: 0, height: 0 });
-            });
-          }
-        });
-        a.transition({ left: pos1left, scale: 2.5 }).transition({ opacity: 1, scale: 1 }, 800, 'ease');
-      } else {
-        ah.transition({ 'margin-top': 10 }).transition({ width: 100, height: 100 }, function() {
-          $('div.entry').transition({ 'margin-top': $('div#menuIndex').outerHeight() });
-          var pos1left = ah.offset().left;
-          a.transition({ 'margin-top': 10, left: pos1left, scale: 2.5 }).transition({ opacity: 1, scale: 1 }, 800, 'ease');
-        });
-      }
-    })();
 });
