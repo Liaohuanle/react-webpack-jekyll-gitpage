@@ -23,6 +23,12 @@ em {
 }
 
 h2 {
+	font-size: 27px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+h2 {
 	font-size: 22px;
 	font-weight: bold;
 	margin-bottom: 25px;
@@ -114,12 +120,14 @@ body table tr:hover td {
 
 /************layout style*****************/
 #content {
-	width: 1060px;
+	width: 60%;
+	min-width: 1200px;
+	max-width: 1400px;
 	margin: 0px auto 60px;
 	min-height: 400px;
 	height: auto !important;
 	height: 400px;
-    font-family: monospace;
+  font-family: monospace;
 }
 
 a.external:after {
