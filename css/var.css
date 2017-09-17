@@ -36,3 +36,36 @@
     column-count: 55;
   }
 }
+
+.item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  padding: 10px;
+  counter-increment: item-counter;
+}
+.item__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  font-size: 40px;
+  color: darken(#fff, 5%);
+  background: #f4f6f8;
+  box-sizing: border-box;
+}
+
+.item:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  background-color: #222;
+  content: counter(item-counter);
+}
