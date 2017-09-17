@@ -22,7 +22,7 @@ em {
     color: lightseagreen;
 }
 
-h2 {
+h1 {
 	font-size: 27px;
 	font-weight: bold;
 	margin-bottom: 25px;
@@ -124,9 +124,7 @@ body table tr:hover td {
 	min-width: 1200px;
 	max-width: 1400px;
 	margin: 0px auto 60px;
-	min-height: 400px;
-	height: auto !important;
-	height: 400px;
+	padding: 20px;
   font-family: monospace;
 }
 
