@@ -36,5 +36,8 @@ var waitForFinalEvent = (function() {
 })();
 
 $(function(){
-  $('#start').html(moment().diff('2017.8.13',moment()))
+  const timeS = moment('2017.8.13')
+  $('#day').html(timeS.diff(moment(),'day'))
+  $('#hour').html(momenttimeS.diff(moment(),'hour'))
+  setInterval($('#second').html(timeS.diff(moment(),'second')),1000)
 })
