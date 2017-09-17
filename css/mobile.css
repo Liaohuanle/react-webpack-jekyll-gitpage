@@ -2,7 +2,7 @@
 
     body {
         font-size: 14px;
-        overflow: hidden;
+        overflow-x: hidden;
         padding: 100x 0px;
     }
 
