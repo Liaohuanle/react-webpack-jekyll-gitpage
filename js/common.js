@@ -36,7 +36,7 @@ var waitForFinalEvent = (function() {
 })();
 
 $(function(){
-  const timeS = moment('2017.8.13')
+  const timeS = moment('2017-8-13')
   const now = moment()
   let sec = Number(timeS.diff(now,'second'))
   let min = Number(timeS.diff(now,'minute'))
