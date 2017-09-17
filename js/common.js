@@ -38,14 +38,16 @@ var waitForFinalEvent = (function() {
 $(function(){
   const timeS = moment('2017.8.13')
   const now = moment()
+  const sec = 0- timeS.diff(now,'second')
+  const min = 0- timeS.diff(now,'minute')
   $('#day').html(0- timeS.diff(now,'day'))
   $('#hour').html(0- timeS.diff(now,'hour'))
-  $('#minute').html(0- timeS.diff(now,'minute'))
-  $('#second').html(0- timeS.diff(now,'second'))
+  $('#minute').html(min)
+  $('#second').html(sec)
   setInterval(() => {
-    $('#minute').html(0- (timeS.diff(now,'minute') + 1))
+    $('#minute').html(min + 1)
   }, 60000)
   setInterval(() => {
-    $('#second').html(0- (timeS.diff(now,'second') + 1))
+    $('#second').html( sec + 1)
   }, 1000)
 })
