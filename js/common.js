@@ -41,6 +41,6 @@ $(function(){
   $('#day').html(0- timeS.diff(now,'day'))
   $('#hour').html(0- timeS.diff(now,'hour'))
   setInterval(() => {
-    $('#second').html(timeS.diff(now,'second'))
-  },1000)
+    $('#second').html(0- timeS.diff(now,'minute'))
+  }, 60000)
 })
