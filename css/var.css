@@ -69,3 +69,10 @@
   background-color: #222;
   content: counter(item-counter);
 }
+
+.tem-im{
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
