@@ -68,5 +68,4 @@
   font-weight: bold;
   background-color: #222;
   content: counter(item-counter);
-  background-image: url('../images/e.jpeg')
 }
