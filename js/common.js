@@ -40,8 +40,12 @@ $(function(){
   const now = moment()
   $('#day').html(0- timeS.diff(now,'day'))
   $('#hour').html(0- timeS.diff(now,'hour'))
-  $('#second').html(0- timeS.diff(now,'minute'))
+  $('#minute').html(0- timeS.diff(now,'minute'))
+  $('#second').html(0- timeS.diff(now,'second'))
   setInterval(() => {
-    $('#second').html(0- timeS.diff(now,'minute'))
+    $('#minute').html(0- timeS.diff(now,'minute'))
   }, 60000)
+  setInterval(() => {
+    $('#second').html(0- timeS.diff(now,'second'))
+  }, 1000)
 })
