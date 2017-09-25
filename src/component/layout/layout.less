@@ -1,0 +1,22 @@
+@import '../less/var.less';
+@import '../../assets/icon/icon.less';
+@import '../../assets/font/font.less';
+body, html{
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  width: 100vw;
+  font-family: 'lushen';
+  background: @background-color;
+}
+.header{
+  height: 60px;
+  color: @theme-font-color;
+  padding: 15px;
+  .menu{
+    font-size: 18px;
+    transition: all .4s;
+    cursor: pointer;
+    transform: rotate(-90deg);
+  }
+}
