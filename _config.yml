@@ -4,4 +4,4 @@ permalink: /:title
 encoding: UTF-8
 
 title: liaohuanle
-baseurl: https://github.com/Liaohuanle/liaohuanle.github.io/src/index.html
+baseurl: /src/index.html
