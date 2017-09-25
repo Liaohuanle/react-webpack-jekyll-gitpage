@@ -7,8 +7,6 @@ const ROOT_PATH = path.join(__dirname, './'); // 项目根目录
 const MODULES_PATH = path.join(ROOT_PATH, './node_modules'); // node包目录
 const BUILD_PATH = path.join(ROOT_PATH, './'); // 最后输出放置公共资源的目录
 
-const port = 9002
-
 module.exports = {
   context: CURRENT_PATH,
   entry: [
@@ -57,9 +55,6 @@ module.exports = {
         removeComments:true,
         collapseWhitespace:true
       }
-    }),
-    new OpenBrowserPlugin({
-      url: `http://localhost:${port}`
     }),
     new webpack.HotModuleReplacementPlugin()
   ]
