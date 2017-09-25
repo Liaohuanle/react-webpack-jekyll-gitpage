@@ -21,9 +21,13 @@
 ！[image](https://github.com/Liaohuanle/react-webpack-jekyll-gitpage/raw/master/src/assets/ c.png)
 
 5. 注意
+
 5.1 开发： npm start
-5.2 打包文件： npm run build 生成build后的文件夹存放压缩文件都可以配置，注意一定要把index.html单独提取到根目录下，因为jekyll只读取根目录下的index.html
-5.3 代码庞大时可以引入yarn用于版本管控锁定
-5.4 关于域名替换 ， 新建一个文件 名为CNAMW将自己的申请好的域名写入，并在域名管控网站（如阿里云）填写A 的d对应ip以及cname对应username.github.io
+
+5.2 打包文件： npm run build 生成build后的文件夹存放压缩文件都可以配置，注意一定要把index.html单独提取到根目录下，因为jekyll只读取根目录下的index.html 
+
+5.3 代码庞大时可以引入yarn用于版本管控锁定 
+
+5.4 关于域名替换 ， 新建一个文件 名为CNAMW将自己的申请好的域名写入，并在域名管控网站（如阿里云）填写A 的d对应ip以及cname对应username.github.io 
 
  #  有问题欢迎留言， read写的仓促 明天来补充细节哦 下班啦
