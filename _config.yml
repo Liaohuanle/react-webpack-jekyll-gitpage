@@ -4,4 +4,4 @@ permalink: /:title
 encoding: UTF-8
 
 title: liaohuanle
-baseurl: /src
+baseurl: /build

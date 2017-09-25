@@ -3,8 +3,7 @@ const path = require('path');
 const CURRENT_PATH = path.resolve(__dirname); // 获取到当前目录
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
-const ROOT_PATH = path.join(__dirname, './src'); // 项目根目录
-const MODULES_PATH = path.join(ROOT_PATH, './node_modules'); // node包目录
+const ROOT_PATH = path.join(__dirname, './'); // 项目根目录 const MODULES_PATH = path.join(ROOT_PATH, './node_modules'); // node包目录
 const BUILD_PATH = path.join(ROOT_PATH, './'); // 最后输出放置公共资源的目录
 
 const port = 9002
@@ -23,10 +22,6 @@ module.exports = {
     progress: true,
     contentBase: './',
     port
-  },
-  output: {
-    path: BUILD_PATH, // 设置输出目录
-    filename: 'app.js', // 输出文件名
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.coffee','.ts','tsx'] // 配置简写，配置过后，书写该文件路径的时候可以省略文件后缀
@@ -60,7 +55,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title:'LUSHEN',
       filename: 'index.html',
-      template: './index.html',
+      template: './src/index.html',
       inject: true,
       hash: true,
       minify:{
