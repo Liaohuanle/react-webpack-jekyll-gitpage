@@ -14,7 +14,7 @@ module.exports = {
   entry: [
     'webpack/hot/dev-server',
     `webpack-dev-server/client?http://localhost:${port}`,
-    path.resolve(__dirname, './index.js')
+    path.resolve(__dirname, './src/index.js')
   ],
   devServer: {
     historyApiFallback: true,
@@ -54,12 +54,19 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
-      }
+      },
+      except: ['$super', '$', 'exports', 'require']
     }),
     new HtmlWebpackPlugin({
+      title:'LUSHEN',
       filename: 'index.html',
       template: './index.html',
-      inject: true
+      inject: true,
+      hash: true,
+      minify:{
+        removeComments:true,
+        collapseWhitespace:true
+      }
     }),
     new OpenBrowserPlugin({
       url: `http://localhost:${port}`

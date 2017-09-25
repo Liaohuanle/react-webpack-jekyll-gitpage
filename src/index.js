@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import MainLayout from './src/component/layout/main'
+import MainLayout from './component/layout/main'
 ReactDom.render(
   <div>
     <MainLayout header={ 123 }/>
