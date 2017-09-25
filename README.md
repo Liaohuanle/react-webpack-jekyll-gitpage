@@ -1,2 +1,0 @@
-# liao.github.io
-blog
