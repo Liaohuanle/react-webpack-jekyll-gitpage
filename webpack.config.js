@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const CURRENT_PATH = path.resolve(__dirname); // 获取到当前目录
 const ROOT_PATH = path.join(__dirname, '../'); // 项目根目录
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MODULES_PATH = path.join(ROOT_PATH, './node_modules'); // node包目录
 const BUILD_PATH = path.join(ROOT_PATH, './public'); // 最后输出放置公共资源的目录
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
@@ -13,14 +14,14 @@ module.exports = {
   entry: [
     'webpack/hot/dev-server',
     `webpack-dev-server/client?http://localhost:${port}`,
-    path.resolve(__dirname, './src/index.js')
+    path.resolve(__dirname, './index.js')
   ],
   devServer: {
     historyApiFallback: true,
     hot: true,
     inline: true,
     progress: true,
-    contentBase: './src',
+    contentBase: './',
     port
   },
   output: {
@@ -54,6 +55,11 @@ module.exports = {
       compress: {
         warnings: false
       }
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html',
+      inject: true
     }),
     new OpenBrowserPlugin({
       url: `http://localhost:${port}`
