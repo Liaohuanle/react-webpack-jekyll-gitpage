@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint '*.@(js|jsx)'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --progress --profile --colors --config webpack.production.config.js",
     "start": "webpack-dev-server --devtool eval --progress --hot --colors  --config ./webpack.config.js --content-base src",
     "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js",
     "validate": "npm ls"
